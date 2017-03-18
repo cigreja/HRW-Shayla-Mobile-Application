@@ -11,5 +11,9 @@ Make sure to have [XCode](https://developer.apple.com/xcode/) installed on your 
 After both Git and XCode / Xamarin have installed correctly, you can clone from this repository to your local machine with the following command in your terminal:
 
 ```
+(For public repo access)
 git clone https://github.com/ychennay/HRW-Shayla-Mobile-Application.git
+
+(For private repo access)
+git clone https://[insert username]:[insert password]@github.com/ychennay/HRW-Shayla-Mobile-Application.git
 ```

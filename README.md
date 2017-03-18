@@ -1,9 +1,9 @@
-### HRW-Shayla-Mobile-Application
+# HRW-Shayla-Mobile-Application
 This repository stores all the resources and code for HRW Music Group's Shayla iOS mobile application. 
 
-# Octopress Popular Posts Plugin
+## Installation and Setup
 
-Popular posts plugin adds a popular posts asides section to your [Octopress](http://octopress.org) blog. Popularity of the post is calculated by the [Google page rank](http://en.wikipedia.org/wiki/PageRank).
+Make sure to have [XCode](https://developer.apple.com/xcode/) installed on your system, along with [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) as your source control manager. 
 
 ## How it works
 

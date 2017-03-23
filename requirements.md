@@ -40,6 +40,7 @@ Basically 9 pages (views):
 - Can view details about their biography (include text, picture, etc.)
 - View “fan base” (plugs)
 - Some interactivity functions with followers / fans
+- ability to pin videos 
 
 ## “Other users” list view:
 - Can view songs uploaded by the general public

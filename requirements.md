@@ -18,6 +18,7 @@ Basically 9 pages (views):
 (similar to Snapchat, can swipe up, swipe down)
 - Should display videos from the teen girls that are currently trending (perhaps three, sorted by view count)
 - Videos are not hosted internally, housed on YouTube?
+- live leader board for top songs, sorted by views, etc.
 
 ### Actions:
 - Swipe (one direction) → view for covers 

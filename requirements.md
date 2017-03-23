@@ -19,10 +19,15 @@ Basically 9 pages (views):
 - Should display videos from the teen girls that are currently trending (perhaps three, sorted by view count)
 - Videos are not hosted internally, housed on YouTube?
 
-## Actions:
+### Actions:
 - Swipe (one direction) → view for covers 
 - Swipe (other direction) → view for original music/work
 - Swipe (up) → details/background view for the song
+
+
+## Sign in page:
+- username/password sign in
+- Facebook, google, or twitter sign in
 
 ## Shayla detail view:
 - A definition of the name of Shayla (“from the fairy palace”), the purpose for the app, etc. and will host a video describing the overall mission of HRW.

@@ -25,6 +25,7 @@ Basically 9 pages (views):
 - Swipe (other direction) → view for original music/work
 - Swipe (up) → details/background view for the song
 
+## Ability to send short mini-stories
 
 ## Sign in page:
 - username/password sign in

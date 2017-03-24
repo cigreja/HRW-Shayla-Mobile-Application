@@ -1,7 +1,8 @@
 ## Sign-In Page
 
 * Create Developer accounts on Google, Facebook and Twitter for Login Access.
-* Generate API KeyIntegrate Google, Facebook and Twitter APIs in xcode for “Login via” access.
+* Generate API Key
+* Integrate Google, Facebook and Twitter APIs in xcode for “Login via” access.
 * Regular Sign-In Option through registered email and password
 * A Sign-Up form for initial registration
 * Some kind of database connectivity for storing the User’s data 

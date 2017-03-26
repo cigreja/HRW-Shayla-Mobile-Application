@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CF1BD671E885E690035773E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1BD661E885E690035773E /* AppDelegate.swift */; };
+		1CF1BD691E885E690035773E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1BD681E885E690035773E /* RootViewController.swift */; };
+		1CF1BD6B1E885E690035773E /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1BD6A1E885E690035773E /* DataViewController.swift */; };
+		1CF1BD6D1E885E690035773E /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1BD6C1E885E690035773E /* ModelController.swift */; };
+		1CF1BD701E885E690035773E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF1BD6E1E885E690035773E /* Main.storyboard */; };
+		1CF1BD721E885E690035773E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CF1BD711E885E690035773E /* Assets.xcassets */; };
+		1CF1BD751E885E690035773E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF1BD731E885E690035773E /* LaunchScreen.storyboard */; };
+		1CF1BD801E885E690035773E /* ShaylaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1BD7F1E885E690035773E /* ShaylaTests.swift */; };
+		1CF1BD8B1E885E6A0035773E /* ShaylaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1BD8A1E885E6A0035773E /* ShaylaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CF1BD7C1E885E690035773E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CF1BD5B1E885E640035773E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CF1BD621E885E640035773E;
+			remoteInfo = Shayla;
+		};
+		1CF1BD871E885E690035773E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CF1BD5B1E885E640035773E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CF1BD621E885E640035773E;
+			remoteInfo = Shayla;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CF1BD631E885E680035773E /* Shayla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shayla.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CF1BD661E885E690035773E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CF1BD681E885E690035773E /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		1CF1BD6A1E885E690035773E /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		1CF1BD6C1E885E690035773E /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		1CF1BD6F1E885E690035773E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CF1BD711E885E690035773E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CF1BD741E885E690035773E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CF1BD761E885E690035773E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CF1BD7B1E885E690035773E /* ShaylaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShaylaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CF1BD7F1E885E690035773E /* ShaylaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaylaTests.swift; sourceTree = "<group>"; };
+		1CF1BD811E885E690035773E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CF1BD861E885E690035773E /* ShaylaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShaylaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CF1BD8A1E885E6A0035773E /* ShaylaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaylaUITests.swift; sourceTree = "<group>"; };
+		1CF1BD8C1E885E6A0035773E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CF1BD601E885E640035773E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CF1BD781E885E690035773E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CF1BD831E885E690035773E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CF1BD5A1E885E640035773E = {
+			isa = PBXGroup;
+			children = (
+				1CF1BD651E885E680035773E /* Shayla */,
+				1CF1BD7E1E885E690035773E /* ShaylaTests */,
+				1CF1BD891E885E690035773E /* ShaylaUITests */,
+				1CF1BD641E885E680035773E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CF1BD641E885E680035773E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CF1BD631E885E680035773E /* Shayla.app */,
+				1CF1BD7B1E885E690035773E /* ShaylaTests.xctest */,
+				1CF1BD861E885E690035773E /* ShaylaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CF1BD651E885E680035773E /* Shayla */ = {
+			isa = PBXGroup;
+			children = (
+				1CF1BD661E885E690035773E /* AppDelegate.swift */,
+				1CF1BD681E885E690035773E /* RootViewController.swift */,
+				1CF1BD6A1E885E690035773E /* DataViewController.swift */,
+				1CF1BD6C1E885E690035773E /* ModelController.swift */,
+				1CF1BD6E1E885E690035773E /* Main.storyboard */,
+				1CF1BD711E885E690035773E /* Assets.xcassets */,
+				1CF1BD731E885E690035773E /* LaunchScreen.storyboard */,
+				1CF1BD761E885E690035773E /* Info.plist */,
+			);
+			path = Shayla;
+			sourceTree = "<group>";
+		};
+		1CF1BD7E1E885E690035773E /* ShaylaTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CF1BD7F1E885E690035773E /* ShaylaTests.swift */,
+				1CF1BD811E885E690035773E /* Info.plist */,
+			);
+			path = ShaylaTests;
+			sourceTree = "<group>";
+		};
+		1CF1BD891E885E690035773E /* ShaylaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1CF1BD8A1E885E6A0035773E /* ShaylaUITests.swift */,
+				1CF1BD8C1E885E6A0035773E /* Info.plist */,
+			);
+			path = ShaylaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CF1BD621E885E640035773E /* Shayla */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CF1BD8F1E885E6A0035773E /* Build configuration list for PBXNativeTarget "Shayla" */;
+			buildPhases = (
+				1CF1BD5F1E885E640035773E /* Sources */,
+				1CF1BD601E885E640035773E /* Frameworks */,
+				1CF1BD611E885E640035773E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shayla;
+			productName = Shayla;
+			productReference = 1CF1BD631E885E680035773E /* Shayla.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CF1BD7A1E885E690035773E /* ShaylaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CF1BD921E885E6A0035773E /* Build configuration list for PBXNativeTarget "ShaylaTests" */;
+			buildPhases = (
+				1CF1BD771E885E690035773E /* Sources */,
+				1CF1BD781E885E690035773E /* Frameworks */,
+				1CF1BD791E885E690035773E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CF1BD7D1E885E690035773E /* PBXTargetDependency */,
+			);
+			name = ShaylaTests;
+			productName = ShaylaTests;
+			productReference = 1CF1BD7B1E885E690035773E /* ShaylaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1CF1BD851E885E690035773E /* ShaylaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CF1BD951E885E6A0035773E /* Build configuration list for PBXNativeTarget "ShaylaUITests" */;
+			buildPhases = (
+				1CF1BD821E885E690035773E /* Sources */,
+				1CF1BD831E885E690035773E /* Frameworks */,
+				1CF1BD841E885E690035773E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CF1BD881E885E690035773E /* PBXTargetDependency */,
+			);
+			name = ShaylaUITests;
+			productName = ShaylaUITests;
+			productReference = 1CF1BD861E885E690035773E /* ShaylaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CF1BD5B1E885E640035773E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "HRW Music Group LLC";
+				TargetAttributes = {
+					1CF1BD621E885E640035773E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 24AMB8W3GR;
+						ProvisioningStyle = Automatic;
+					};
+					1CF1BD7A1E885E690035773E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 24AMB8W3GR;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1CF1BD621E885E640035773E;
+					};
+					1CF1BD851E885E690035773E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 24AMB8W3GR;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1CF1BD621E885E640035773E;
+					};
+				};
+			};
+			buildConfigurationList = 1CF1BD5E1E885E640035773E /* Build configuration list for PBXProject "Shayla" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CF1BD5A1E885E640035773E;
+			productRefGroup = 1CF1BD641E885E680035773E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CF1BD621E885E640035773E /* Shayla */,
+				1CF1BD7A1E885E690035773E /* ShaylaTests */,
+				1CF1BD851E885E690035773E /* ShaylaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CF1BD611E885E640035773E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF1BD751E885E690035773E /* LaunchScreen.storyboard in Resources */,
+				1CF1BD721E885E690035773E /* Assets.xcassets in Resources */,
+				1CF1BD701E885E690035773E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CF1BD791E885E690035773E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CF1BD841E885E690035773E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CF1BD5F1E885E640035773E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF1BD691E885E690035773E /* RootViewController.swift in Sources */,
+				1CF1BD6D1E885E690035773E /* ModelController.swift in Sources */,
+				1CF1BD6B1E885E690035773E /* DataViewController.swift in Sources */,
+				1CF1BD671E885E690035773E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CF1BD771E885E690035773E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF1BD801E885E690035773E /* ShaylaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CF1BD821E885E690035773E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF1BD8B1E885E6A0035773E /* ShaylaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CF1BD7D1E885E690035773E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CF1BD621E885E640035773E /* Shayla */;
+			targetProxy = 1CF1BD7C1E885E690035773E /* PBXContainerItemProxy */;
+		};
+		1CF1BD881E885E690035773E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CF1BD621E885E640035773E /* Shayla */;
+			targetProxy = 1CF1BD871E885E690035773E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CF1BD6E1E885E690035773E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CF1BD6F1E885E690035773E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1CF1BD731E885E690035773E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CF1BD741E885E690035773E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CF1BD8D1E885E6A0035773E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CF1BD8E1E885E6A0035773E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CF1BD901E885E6A0035773E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 24AMB8W3GR;
+				INFOPLIST_FILE = Shayla/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HRWMusic.Shayla;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1CF1BD911E885E6A0035773E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 24AMB8W3GR;
+				INFOPLIST_FILE = Shayla/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HRWMusic.Shayla;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1CF1BD931E885E6A0035773E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 24AMB8W3GR;
+				INFOPLIST_FILE = ShaylaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HRWMusic.ShaylaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shayla.app/Shayla";
+			};
+			name = Debug;
+		};
+		1CF1BD941E885E6A0035773E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 24AMB8W3GR;
+				INFOPLIST_FILE = ShaylaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HRWMusic.ShaylaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shayla.app/Shayla";
+			};
+			name = Release;
+		};
+		1CF1BD961E885E6A0035773E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 24AMB8W3GR;
+				INFOPLIST_FILE = ShaylaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HRWMusic.ShaylaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Shayla;
+			};
+			name = Debug;
+		};
+		1CF1BD971E885E6A0035773E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 24AMB8W3GR;
+				INFOPLIST_FILE = ShaylaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HRWMusic.ShaylaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Shayla;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CF1BD5E1E885E640035773E /* Build configuration list for PBXProject "Shayla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CF1BD8D1E885E6A0035773E /* Debug */,
+				1CF1BD8E1E885E6A0035773E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CF1BD8F1E885E6A0035773E /* Build configuration list for PBXNativeTarget "Shayla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CF1BD901E885E6A0035773E /* Debug */,
+				1CF1BD911E885E6A0035773E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1CF1BD921E885E6A0035773E /* Build configuration list for PBXNativeTarget "ShaylaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CF1BD931E885E6A0035773E /* Debug */,
+				1CF1BD941E885E6A0035773E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1CF1BD951E885E6A0035773E /* Build configuration list for PBXNativeTarget "ShaylaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CF1BD961E885E6A0035773E /* Debug */,
+				1CF1BD971E885E6A0035773E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CF1BD5B1E885E640035773E /* Project object */;
+}

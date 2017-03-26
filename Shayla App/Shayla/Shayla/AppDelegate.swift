@@ -2,6 +2,7 @@
 //  AppDelegate.swift
 //  Shayla
 //
+//  Created by Yu Chen on 3/26/17.
 //  Copyright © 2017 HRW Music Group LLC. All rights reserved.
 //
 

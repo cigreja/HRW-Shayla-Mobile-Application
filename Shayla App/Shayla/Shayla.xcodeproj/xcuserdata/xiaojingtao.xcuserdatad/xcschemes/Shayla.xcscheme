@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1CF1BD621E885E640035773E"
+               BlueprintIdentifier = "C9187CC11E886FFF007EDCD5"
                BuildableName = "Shayla.app"
                BlueprintName = "Shayla"
                ReferencedContainer = "container:Shayla.xcodeproj">
@@ -28,31 +28,11 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1CF1BD7A1E885E690035773E"
-               BuildableName = "ShaylaTests.xctest"
-               BlueprintName = "ShaylaTests"
-               ReferencedContainer = "container:Shayla.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1CF1BD851E885E690035773E"
-               BuildableName = "ShaylaUITests.xctest"
-               BlueprintName = "ShaylaUITests"
-               ReferencedContainer = "container:Shayla.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1CF1BD621E885E640035773E"
+            BlueprintIdentifier = "C9187CC11E886FFF007EDCD5"
             BuildableName = "Shayla.app"
             BlueprintName = "Shayla"
             ReferencedContainer = "container:Shayla.xcodeproj">
@@ -75,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1CF1BD621E885E640035773E"
+            BlueprintIdentifier = "C9187CC11E886FFF007EDCD5"
             BuildableName = "Shayla.app"
             BlueprintName = "Shayla"
             ReferencedContainer = "container:Shayla.xcodeproj">
@@ -94,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1CF1BD621E885E640035773E"
+            BlueprintIdentifier = "C9187CC11E886FFF007EDCD5"
             BuildableName = "Shayla.app"
             BlueprintName = "Shayla"
             ReferencedContainer = "container:Shayla.xcodeproj">

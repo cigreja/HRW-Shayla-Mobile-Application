@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B9FFEAC3294608E6C31F37A /* Pods_Shayla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA129BB0517A69CA52FD3BF /* Pods_Shayla.framework */; };
 		C9187CC61E886FFF007EDCD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9187CC51E886FFF007EDCD5 /* AppDelegate.swift */; };
 		C9187CC81E886FFF007EDCD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9187CC71E886FFF007EDCD5 /* ViewController.swift */; };
 		C9187CCB1E887000007EDCD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9187CC91E887000007EDCD5 /* Main.storyboard */; };
 		C9187CCD1E887000007EDCD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9187CCC1E887000007EDCD5 /* Assets.xcassets */; };
 		C9187CD01E887000007EDCD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9187CCE1E887000007EDCD5 /* LaunchScreen.storyboard */; };
 		C9187CD81E887DFF007EDCD5 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9187CD71E887DFF007EDCD5 /* RegistrationViewController.swift */; };
+		F0616C831E8896A100FB3975 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0616C7F1E8896A100FB3975 /* Bolts.framework */; };
+		F0616C841E8896A100FB3975 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0616C801E8896A100FB3975 /* FBSDKCoreKit.framework */; };
+		F0616C851E8896A100FB3975 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0616C811E8896A100FB3975 /* FBSDKLoginKit.framework */; };
+		F0616C861E8896A100FB3975 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0616C821E8896A100FB3975 /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59791BB2D8DBCBEFAB3D3021 /* Pods-Shayla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shayla.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shayla/Pods-Shayla.debug.xcconfig"; sourceTree = "<group>"; };
+		6AA129BB0517A69CA52FD3BF /* Pods_Shayla.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shayla.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C266C020BD7F58A169EF582E /* Pods-Shayla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shayla.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shayla/Pods-Shayla.release.xcconfig"; sourceTree = "<group>"; };
 		C9187CC21E886FFF007EDCD5 /* Shayla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shayla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9187CC51E886FFF007EDCD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9187CC71E886FFF007EDCD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +32,11 @@
 		C9187CCF1E887000007EDCD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9187CD11E887000007EDCD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9187CD71E887DFF007EDCD5 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		F0616C7F1E8896A100FB3975 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		F0616C801E8896A100FB3975 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		F0616C811E8896A100FB3975 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		F0616C821E8896A100FB3975 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		F0616C871E889B6A00FB3975 /* FBLoginIntegration-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FBLoginIntegration-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +44,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B9FFEAC3294608E6C31F37A /* Pods_Shayla.framework in Frameworks */,
+				F0616C841E8896A100FB3975 /* FBSDKCoreKit.framework in Frameworks */,
+				F0616C861E8896A100FB3975 /* FBSDKShareKit.framework in Frameworks */,
+				F0616C851E8896A100FB3975 /* FBSDKLoginKit.framework in Frameworks */,
+				F0616C831E8896A100FB3975 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		570F32304124E406693D3DD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59791BB2D8DBCBEFAB3D3021 /* Pods-Shayla.debug.xcconfig */,
+				C266C020BD7F58A169EF582E /* Pods-Shayla.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		62DEA6B165A35B91971ACCBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0616C7F1E8896A100FB3975 /* Bolts.framework */,
+				F0616C801E8896A100FB3975 /* FBSDKCoreKit.framework */,
+				F0616C811E8896A100FB3975 /* FBSDKLoginKit.framework */,
+				F0616C821E8896A100FB3975 /* FBSDKShareKit.framework */,
+				6AA129BB0517A69CA52FD3BF /* Pods_Shayla.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C9187CB91E886FFF007EDCD5 = {
 			isa = PBXGroup;
 			children = (
 				C9187CC41E886FFF007EDCD5 /* Shayla */,
 				C9187CC31E886FFF007EDCD5 /* Products */,
+				570F32304124E406693D3DD0 /* Pods */,
+				62DEA6B165A35B91971ACCBD /* Frameworks */,
+				F0616C871E889B6A00FB3975 /* FBLoginIntegration-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9187CD41E887000007EDCD5 /* Build configuration list for PBXNativeTarget "Shayla" */;
 			buildPhases = (
+				E5C4ED89488C607D6E017528 /* [CP] Check Pods Manifest.lock */,
 				C9187CBE1E886FFF007EDCD5 /* Sources */,
 				C9187CBF1E886FFF007EDCD5 /* Frameworks */,
 				C9187CC01E886FFF007EDCD5 /* Resources */,
+				6E3C54B949DD6F88C79CDAF4 /* [CP] Embed Pods Frameworks */,
+				8AAF7DF496C67E7C44325B96 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,6 +144,7 @@
 				TargetAttributes = {
 					C9187CC11E886FFF007EDCD5 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = W54AFR45D5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -133,6 +179,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E3C54B949DD6F88C79CDAF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Shayla/Pods-Shayla-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AAF7DF496C67E7C44325B96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Shayla/Pods-Shayla-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5C4ED89488C607D6E017528 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C9187CBE1E886FFF007EDCD5 /* Sources */ = {
@@ -262,8 +356,14 @@
 		};
 		C9187CD51E887000007EDCD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59791BB2D8DBCBEFAB3D3021 /* Pods-Shayla.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W54AFR45D5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Shayla/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hrwmusicgroup.Shayla;
@@ -274,8 +374,14 @@
 		};
 		C9187CD61E887000007EDCD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C266C020BD7F58A169EF582E /* Pods-Shayla.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W54AFR45D5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Shayla/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hrwmusicgroup.Shayla;
@@ -303,6 +409,7 @@
 				C9187CD61E887000007EDCD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

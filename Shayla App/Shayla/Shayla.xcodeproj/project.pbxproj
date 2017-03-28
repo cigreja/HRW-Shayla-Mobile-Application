@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B9FFEAC3294608E6C31F37A /* Pods_Shayla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA129BB0517A69CA52FD3BF /* Pods_Shayla.framework */; };
 		C9187CC61E886FFF007EDCD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9187CC51E886FFF007EDCD5 /* AppDelegate.swift */; };
-		C9187CC81E886FFF007EDCD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9187CC71E886FFF007EDCD5 /* ViewController.swift */; };
-		C9187CCB1E887000007EDCD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9187CC91E887000007EDCD5 /* Main.storyboard */; };
+		C9187CC81E886FFF007EDCD5 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9187CC71E886FFF007EDCD5 /* LoginVC.swift */; };
 		C9187CCD1E887000007EDCD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9187CCC1E887000007EDCD5 /* Assets.xcassets */; };
 		C9187CD01E887000007EDCD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9187CCE1E887000007EDCD5 /* LaunchScreen.storyboard */; };
 		C9187CD81E887DFF007EDCD5 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9187CD71E887DFF007EDCD5 /* RegistrationViewController.swift */; };
@@ -18,6 +17,7 @@
 		F0616C841E8896A100FB3975 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0616C801E8896A100FB3975 /* FBSDKCoreKit.framework */; };
 		F0616C851E8896A100FB3975 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0616C811E8896A100FB3975 /* FBSDKLoginKit.framework */; };
 		F0616C861E8896A100FB3975 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0616C821E8896A100FB3975 /* FBSDKShareKit.framework */; };
+		F0B7D0D51E8958C70070AB6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B7D0D31E8958C70070AB6A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +26,7 @@
 		C266C020BD7F58A169EF582E /* Pods-Shayla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shayla.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shayla/Pods-Shayla.release.xcconfig"; sourceTree = "<group>"; };
 		C9187CC21E886FFF007EDCD5 /* Shayla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shayla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9187CC51E886FFF007EDCD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9187CC71E886FFF007EDCD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C9187CCA1E887000007EDCD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9187CC71E886FFF007EDCD5 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		C9187CCC1E887000007EDCD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9187CCF1E887000007EDCD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9187CD11E887000007EDCD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +36,7 @@
 		F0616C811E8896A100FB3975 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		F0616C821E8896A100FB3975 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		F0616C871E889B6A00FB3975 /* FBLoginIntegration-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FBLoginIntegration-Bridging-Header.h"; sourceTree = "<group>"; };
+		F0B7D0D41E8958C70070AB6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				C9187CC51E886FFF007EDCD5 /* AppDelegate.swift */,
-				C9187CC71E886FFF007EDCD5 /* ViewController.swift */,
+				C9187CC71E886FFF007EDCD5 /* LoginVC.swift */,
 				C9187CD71E887DFF007EDCD5 /* RegistrationViewController.swift */,
-				C9187CC91E887000007EDCD5 /* Main.storyboard */,
 				C9187CCC1E887000007EDCD5 /* Assets.xcassets */,
+				F0B7D0D31E8958C70070AB6A /* Main.storyboard */,
 				C9187CCE1E887000007EDCD5 /* LaunchScreen.storyboard */,
 				C9187CD11E887000007EDCD5 /* Info.plist */,
 			);
@@ -122,6 +122,7 @@
 				C9187CC01E886FFF007EDCD5 /* Resources */,
 				6E3C54B949DD6F88C79CDAF4 /* [CP] Embed Pods Frameworks */,
 				8AAF7DF496C67E7C44325B96 /* [CP] Copy Pods Resources */,
+				F0B3F5181E8AF82D00F064D3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -172,9 +173,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0B7D0D51E8958C70070AB6A /* Main.storyboard in Resources */,
 				C9187CD01E887000007EDCD5 /* LaunchScreen.storyboard in Resources */,
 				C9187CCD1E887000007EDCD5 /* Assets.xcassets in Resources */,
-				C9187CCB1E887000007EDCD5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +227,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		F0B3F5181E8AF82D00F064D3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" b47cee7d3310247851b0328faddf5bbca2f121bf 99564717f4d464d4a089a3487c38b8a3e35fed3d0f1e3e14c45521918dd9002d";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -234,7 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9187CD81E887DFF007EDCD5 /* RegistrationViewController.swift in Sources */,
-				C9187CC81E886FFF007EDCD5 /* ViewController.swift in Sources */,
+				C9187CC81E886FFF007EDCD5 /* LoginVC.swift in Sources */,
 				C9187CC61E886FFF007EDCD5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,20 +256,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C9187CC91E887000007EDCD5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9187CCA1E887000007EDCD5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C9187CCE1E887000007EDCD5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C9187CCF1E887000007EDCD5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F0B7D0D31E8958C70070AB6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0B7D0D41E8958C70070AB6A /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

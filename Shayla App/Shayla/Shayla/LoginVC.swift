@@ -10,11 +10,14 @@ import UIKit
 import FacebookLogin
 import FBSDKCoreKit
 import TwitterKit
+import GoogleSignIn
+import Google
 
-class LoginVC: UIViewController, LoginButtonDelegate {
+class LoginVC: UIViewController, LoginButtonDelegate, GIDSignInUIDelegate {
 
     @IBOutlet weak var facebookLoginButton: UIStackView!
     @IBOutlet weak var twitterLoginButton: UIStackView!
+    @IBOutlet weak var googleLoginButton: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +32,7 @@ class LoginVC: UIViewController, LoginButtonDelegate {
         
         showFacebookButton()
         showTwitterButton()
+        showGoogleButton()
     }
     
     // Facebook Button
@@ -92,6 +96,24 @@ class LoginVC: UIViewController, LoginButtonDelegate {
         // Change where the log in button is positioned in your view
         twitterLoginButton.insertArrangedSubview(twitterLogInButton, at: 0)
         twitterLoginButton.center = self.view.center
+    }
+    
+    //Google Button
+    func showGoogleButton() {
+        
+        let googleSignIn = GIDSignInButton()
+        
+        var error: NSError?
+        GGLContext.sharedInstance().configureWithError(&error)
+        
+        if error != nil {
+            
+            print(error!)
+        }
+        
+        GIDSignIn.sharedInstance().uiDelegate = self
+        googleLoginButton.insertArrangedSubview(googleSignIn, at: 0)
+        googleLoginButton.center = self.view.center
     }
 }
 

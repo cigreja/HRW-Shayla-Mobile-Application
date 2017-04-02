@@ -10,13 +10,14 @@ import UIKit
 import FacebookCore
 import Fabric
 import TwitterKit
+import GoogleSignIn
+import Google
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -29,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         
-        return SDKApplicationDelegate.shared.application(app, open: url, options: options)
+        return GIDSignIn.sharedInstance().handle(url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation]) || SDKApplicationDelegate.shared.application(app, open: url, options: options)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

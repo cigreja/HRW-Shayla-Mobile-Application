@@ -10,5 +10,6 @@ pod 'FacebookLogin'
 pod 'FacebookShare'
 pod 'Fabric'
 pod 'TwitterKit'
+pod 'Google/SignIn'
 
 end

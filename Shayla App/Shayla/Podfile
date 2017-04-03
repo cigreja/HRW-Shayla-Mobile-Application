@@ -11,5 +11,5 @@ pod 'FacebookShare'
 pod 'Fabric'
 pod 'TwitterKit'
 pod 'Google/SignIn'
-
+pod 'YouTubePlayer'
 end

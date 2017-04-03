@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Rpg-el-xLN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Rpg-el-xLN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -81,7 +81,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4Ij-GY-mjr" kind="show" id="YaI-6N-5sq"/>
+                                    <segue destination="4Ij-GY-mjr" kind="show" identifier="Show About Us Player" id="YaI-6N-5sq"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uvX-lz-qOd">
@@ -192,10 +192,10 @@
             </objects>
             <point key="canvasLocation" x="821.60000000000002" y="122.78860569715144"/>
         </scene>
-        <!--View Controller-->
+        <!--About Us View Controller-->
         <scene sceneID="xZ8-w3-9MJ">
             <objects>
-                <viewController id="4Ij-GY-mjr" sceneMemberID="viewController">
+                <viewController id="4Ij-GY-mjr" customClass="AboutUsViewController" customModule="Shayla" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bm9-M4-P2c"/>
                         <viewControllerLayoutGuide type="bottom" id="y7N-b6-QXQ"/>
@@ -204,20 +204,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is where the about us will go." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSo-CI-HVz">
-                                <rect key="frame" x="41" y="99" width="307" height="117"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pI-2R-ifm" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="y7N-b6-QXQ" firstAttribute="top" secondItem="9pI-2R-ifm" secondAttribute="bottom" id="2hL-8x-aPF"/>
+                            <constraint firstAttribute="trailing" secondItem="9pI-2R-ifm" secondAttribute="trailing" id="6ao-Up-zGb"/>
+                            <constraint firstItem="9pI-2R-ifm" firstAttribute="top" secondItem="bbK-KL-hRM" secondAttribute="top" id="O7E-DB-LCx"/>
+                            <constraint firstItem="9pI-2R-ifm" firstAttribute="leading" secondItem="bbK-KL-hRM" secondAttribute="leading" id="Qkf-ga-rVs"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ytbPlayer" destination="9pI-2R-ifm" id="Cli-NT-jC7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lqc-1W-rNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="822" y="851"/>
+            <point key="canvasLocation" x="821.60000000000002" y="850.52473763118451"/>
         </scene>
         <!--Registration View Controller-->
         <scene sceneID="07a-kC-BR3">
@@ -284,7 +290,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rpg-el-xLN" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qDs-Z2-0pa">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qDs-Z2-0pa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

@@ -63,6 +63,7 @@ PODS:
     - Fabric
   - TwitterKit (2.8.1):
     - TwitterCore (>= 2.8)
+  - YouTubePlayer (0.4.0)
 
 DEPENDENCIES:
   - Fabric
@@ -71,6 +72,7 @@ DEPENDENCIES:
   - FacebookShare
   - Google/SignIn
   - TwitterKit
+  - YouTubePlayer
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
@@ -91,7 +93,8 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 5c046c76a1f859bc9c187e918f18e4fc7bb57b5e
   TwitterCore: e959987be23c767004d29eb7fab8d85d8585a2e5
   TwitterKit: 3b6044a7320340326a4098f3e37aa1dbaeb94942
+  YouTubePlayer: 028451f6772f372d4759866db99824c676ac1473
 
-PODFILE CHECKSUM: 8fb5459b1a286cac1b4285f3dff5da8abc9fd65b
+PODFILE CHECKSUM: 4d2c7bf5790f48316a32651f1f76f96ecdf42f1c
 
 COCOAPODS: 1.2.0

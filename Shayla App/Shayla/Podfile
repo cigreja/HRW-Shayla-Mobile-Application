@@ -11,5 +11,8 @@ pod 'FacebookShare'
 pod 'Fabric'
 pod 'TwitterKit'
 pod 'Google/SignIn'
+pod 'Firebase'
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
 
 end

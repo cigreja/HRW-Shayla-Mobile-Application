@@ -12,6 +12,7 @@ import FBSDKCoreKit
 import TwitterKit
 import GoogleSignIn
 import Google
+import FirebaseAuth
 
 class LoginVC: UIViewController, LoginButtonDelegate, GIDSignInUIDelegate {
 
@@ -19,8 +20,12 @@ class LoginVC: UIViewController, LoginButtonDelegate, GIDSignInUIDelegate {
     @IBOutlet weak var twitterLoginButton: UIStackView!
     @IBOutlet weak var googleLoginButton: UIStackView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        GIDSignIn.sharedInstance().uiDelegate = self
+//        GIDSignIn.sharedInstance().signIn()
         
         navigationController?.navigationBar.barTintColor = self.view.backgroundColor
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]

@@ -8,6 +8,7 @@
 
 import UIKit
 import FacebookCore
+import FBSDKLoginKit
 import Fabric
 import TwitterKit
 import GoogleSignIn
@@ -39,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate  {
         
         return GIDSignIn.sharedInstance().handle(url, sourceApplication:options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: [:]) || SDKApplicationDelegate.shared.application(app, open: url, options: options)
     }
+    
     // this method needs to be defined as we are implementing the GIDSigninDelegate
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
         
@@ -60,6 +62,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate  {
                 Helper.helperObject.switchToNavigationVC()
             }
         })
+    }
+    
+    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError?) {
+        if let error = error {
+            print(error.localizedDescription)
+            return
+        }
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

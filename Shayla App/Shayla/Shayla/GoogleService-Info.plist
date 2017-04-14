@@ -2,39 +2,27 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
-	<string>ca-app-pub-3940256099942544/2934735716</string>
-	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
-	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>310171112172-9bqf0keited2fjba7l922iptp60npe9b.apps.googleusercontent.com</string>
+	<string>832483692599-2arb21kvgdkof5vbofevg14jh3p481cf.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.310171112172-9bqf0keited2fjba7l922iptp60npe9b</string>
-	<key>API_KEY</key>
-	<string>AIzaSyBspuRCLq2pG0AUcvKrIq6EuU4i6i1QOdA</string>
-	<key>GCM_SENDER_ID</key>
-	<string>310171112172</string>
+	<string>com.googleusercontent.apps.832483692599-2arb21kvgdkof5vbofevg14jh3p481cf</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.hrwmusicgroup.Shayla</string>
 	<key>PROJECT_ID</key>
-	<string>shayla-90e22</string>
-	<key>STORAGE_BUCKET</key>
-	<string>shayla-90e22.appspot.com</string>
+	<string>shayla</string>
 	<key>IS_ADS_ENABLED</key>
-	<true/>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
 	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
 	<false/>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<false/>
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:310171112172:ios:807463bb46b24c58</string>
-	<key>DATABASE_URL</key>
-	<string>https://shayla-90e22.firebaseio.com</string>
+	<string>1:832483692599:ios:807463bb46b24c58</string>
 </dict>
 </plist>

@@ -11,12 +11,5 @@ pod 'FacebookShare'
 pod 'Fabric'
 pod 'TwitterKit'
 pod 'Google/SignIn'
-<<<<<<< HEAD
 pod 'YouTubePlayer'
-=======
-pod 'Firebase'
-pod 'Firebase/Core'
-pod 'Firebase/Auth'
-
->>>>>>> FirebaseSetup
 end

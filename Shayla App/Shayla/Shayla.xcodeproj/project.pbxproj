@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20E7E0871E91AFB900B15AD0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20E7E0861E91AFB900B15AD0 /* GoogleService-Info.plist */; };
+		20E7E0891E91B78600B15AD0 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7E0881E91B78600B15AD0 /* Helper.swift */; };
 		9B9FFEAC3294608E6C31F37A /* Pods_Shayla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA129BB0517A69CA52FD3BF /* Pods_Shayla.framework */; };
 		C9187CC61E886FFF007EDCD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9187CC51E886FFF007EDCD5 /* AppDelegate.swift */; };
 		C9187CC81E886FFF007EDCD5 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9187CC71E886FFF007EDCD5 /* LoginVC.swift */; };
 		C9187CCD1E887000007EDCD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9187CCC1E887000007EDCD5 /* Assets.xcassets */; };
 		C9187CD01E887000007EDCD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9187CCE1E887000007EDCD5 /* LaunchScreen.storyboard */; };
 		C9187CD81E887DFF007EDCD5 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9187CD71E887DFF007EDCD5 /* RegistrationViewController.swift */; };
+<<<<<<< HEAD
 		C9187CDA1E91B412007EDCD5 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9187CD91E91B412007EDCD5 /* AboutUsViewController.swift */; };
 		F01728041E8EF1BA009F0262 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F01728031E8EF1BA009F0262 /* GoogleService-Info.plist */; };
+=======
+>>>>>>> FirebaseSetup
 		F0616C831E8896A100FB3975 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0616C7F1E8896A100FB3975 /* Bolts.framework */; };
 		F0616C841E8896A100FB3975 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0616C801E8896A100FB3975 /* FBSDKCoreKit.framework */; };
 		F0616C851E8896A100FB3975 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0616C811E8896A100FB3975 /* FBSDKLoginKit.framework */; };
@@ -23,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20E7E0861E91AFB900B15AD0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		20E7E0881E91B78600B15AD0 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		59791BB2D8DBCBEFAB3D3021 /* Pods-Shayla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shayla.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shayla/Pods-Shayla.debug.xcconfig"; sourceTree = "<group>"; };
 		6AA129BB0517A69CA52FD3BF /* Pods_Shayla.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shayla.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C266C020BD7F58A169EF582E /* Pods-Shayla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shayla.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shayla/Pods-Shayla.release.xcconfig"; sourceTree = "<group>"; };
@@ -33,8 +40,11 @@
 		C9187CCF1E887000007EDCD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9187CD11E887000007EDCD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9187CD71E887DFF007EDCD5 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		C9187CD91E91B412007EDCD5 /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		F01728031E8EF1BA009F0262 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+=======
+>>>>>>> FirebaseSetup
 		F0616C7F1E8896A100FB3975 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		F0616C801E8896A100FB3975 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		F0616C811E8896A100FB3975 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -103,14 +113,19 @@
 			isa = PBXGroup;
 			children = (
 				C9187CC51E886FFF007EDCD5 /* AppDelegate.swift */,
+				20E7E0881E91B78600B15AD0 /* Helper.swift */,
 				C9187CC71E886FFF007EDCD5 /* LoginVC.swift */,
 				C9187CD71E887DFF007EDCD5 /* RegistrationViewController.swift */,
 				C9187CCC1E887000007EDCD5 /* Assets.xcassets */,
 				F0B7D0D31E8958C70070AB6A /* Main.storyboard */,
 				C9187CCE1E887000007EDCD5 /* LaunchScreen.storyboard */,
 				C9187CD11E887000007EDCD5 /* Info.plist */,
+<<<<<<< HEAD
 				F01728031E8EF1BA009F0262 /* GoogleService-Info.plist */,
 				C9187CD91E91B412007EDCD5 /* AboutUsViewController.swift */,
+=======
+				20E7E0861E91AFB900B15AD0 /* GoogleService-Info.plist */,
+>>>>>>> FirebaseSetup
 			);
 			path = Shayla;
 			sourceTree = "<group>";
@@ -180,9 +195,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0B7D0D51E8958C70070AB6A /* Main.storyboard in Resources */,
+				20E7E0871E91AFB900B15AD0 /* GoogleService-Info.plist in Resources */,
 				C9187CD01E887000007EDCD5 /* LaunchScreen.storyboard in Resources */,
 				C9187CCD1E887000007EDCD5 /* Assets.xcassets in Resources */,
-				F01728041E8EF1BA009F0262 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +273,7 @@
 				C9187CD81E887DFF007EDCD5 /* RegistrationViewController.swift in Sources */,
 				C9187CC81E886FFF007EDCD5 /* LoginVC.swift in Sources */,
 				C9187CC61E886FFF007EDCD5 /* AppDelegate.swift in Sources */,
+				20E7E0891E91B78600B15AD0 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

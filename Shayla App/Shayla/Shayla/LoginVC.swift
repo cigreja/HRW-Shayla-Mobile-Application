@@ -1,0 +1,173 @@
+//
+//  ViewController.swift
+//  Shayla
+//
+//  Created by Yu Chen on 3/26/17.
+//  Copyright © 2017 HRW Music Group LLC. All rights reserved.
+//
+
+import UIKit
+import FacebookLogin
+import FBSDKCoreKit
+import TwitterKit
+import GoogleSignIn
+import Google
+import FirebaseAuth
+import Firebase
+
+class LoginVC: UIViewController, LoginButtonDelegate, GIDSignInUIDelegate {
+
+    @IBOutlet weak var facebookLoginButton: UIStackView!
+    @IBOutlet weak var twitterLoginButton: UIStackView!
+    @IBOutlet weak var googleLoginButton: UIStackView!
+    @IBOutlet weak var userName: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
+    
+    //Function to sign in
+    /*@IBAction func signIn(_ sender: Any) {
+        guard let userNameText = userName.text, let passwordText = password.text
+            else {
+                print("Form is invalid")
+                return
+        }
+        
+        FIRAuth.auth()?.signIn(withEmail: userNameText, password: passwordText, completion: { (user, error) in
+            if error != nil {
+                print (error!)
+                return
+            }
+            //successfully log in
+            self.dismiss(animated: true, completion: nil)
+        })
+
+    }
+    //Name-Email Login
+    func handleLogin() {
+    }
+    
+    //Name-Email Logout
+    func handleLogout() {
+        do{
+            try FIRAuth.auth()?.signOut()
+        } catch let logoutError {
+            print(logoutError)
+        }
+        
+    }
+*/
+
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+       
+        
+        /*if FIRAuth.auth()?.currentUser?.uid == nil {
+            perform(#selector(handleLogout), with: nil, afterDelay: 0)
+            
+        }*/
+        
+       //        GIDSignIn.sharedInstance().uiDelegate = self
+//        GIDSignIn.sharedInstance().signIn()
+        
+        navigationController?.navigationBar.barTintColor = self.view.backgroundColor
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        navigationController?.navigationBar.tintColor = UIColor.white
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        UIApplication.shared.statusBarStyle = .lightContent
+        
+        showFacebookButton()
+        showTwitterButton()
+        showGoogleButton()
+    }
+    
+    
+
+    
+    // Facebook Button
+    func showFacebookButton() {
+        
+        let fbLoginButton = LoginButton(readPermissions: [ .publicProfile, .email, .userFriends ])
+        facebookLoginButton.center = self.view.center
+        fbLoginButton.delegate = self
+        facebookLoginButton.insertArrangedSubview(fbLoginButton, at: 0)
+    }
+    
+    // Facebook Login
+    func loginButtonDidCompleteLogin(_ loginButton: LoginButton, result: LoginResult) {
+        
+        switch result {
+            
+        case .failed(let error):
+            print(error)
+            
+        case .cancelled:
+            print("User cancelled login.")
+            
+        case .success:
+            
+            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name,last_name, picture.type(large),email,updated_time"]).start(completionHandler: { (connection, result, error) -> Void in
+                if (error == nil) {
+                    
+                    if let userDict = result as? NSDictionary {
+                        
+                        print(userDict)
+                        print(FBSDKAccessToken.current())
+                    }
+                }
+            })
+        }
+    }
+    
+    // Facebook Logout
+    func loginButtonDidLogOut(_ loginButton: LoginButton) {
+        
+        print("User Logged Out")
+    }
+        
+    // Twitter Button
+    func showTwitterButton() {
+        
+        let twitterLogInButton = TWTRLogInButton { (session, error) in
+            if let unwrappedSession = session {
+                
+                let alert = UIAlertController(title: "Logged In", message: "User \(unwrappedSession.userName) has logged in", preferredStyle: UIAlertControllerStyle.alert
+                )
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                
+            } else {
+                
+                NSLog("Login error: %@", error!.localizedDescription);
+            }
+        }
+        
+        // Change where the log in button is positioned in your view
+        twitterLoginButton.insertArrangedSubview(twitterLogInButton, at: 0)
+        twitterLoginButton.center = self.view.center
+    }
+    
+    //Google Button
+    func showGoogleButton() {
+        
+        let googleSignIn = GIDSignInButton()
+        
+        var error: NSError?
+        GGLContext.sharedInstance().configureWithError(&error)
+        
+        if error != nil {
+            
+            print(error!)
+        }
+        
+        GIDSignIn.sharedInstance().uiDelegate = self
+        googleLoginButton.insertArrangedSubview(googleSignIn, at: 0)
+        googleLoginButton.center = self.view.center
+    }
+}
+

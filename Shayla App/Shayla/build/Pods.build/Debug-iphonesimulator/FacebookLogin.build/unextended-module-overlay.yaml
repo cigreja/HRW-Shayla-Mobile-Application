@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/Mahadev/Desktop/HRW/HRW-Shayla-Mobile-Application-FirebaseSetup/Shayla App/Shayla/build/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/Mahadev/Desktop/HRW/HRW-Shayla-Mobile-Application-FirebaseSetup/Shayla App/Shayla/build/Pods.build/Debug-iphonesimulator/FacebookLogin.build/unextended-module.modulemap',
+    }]
+  }]
+}

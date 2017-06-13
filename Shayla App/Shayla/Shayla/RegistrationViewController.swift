@@ -13,11 +13,12 @@ import Firebase
 
 class RegistrationViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet weak var selectPhoto: UIImageView!
-    @IBOutlet weak var register: UIButton!
+    //@IBOutlet weak var register: UIButton!
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var registerButton: UIButton!
+    //@IBOutlet weak var registerButton: UIButton!
+    
     
     
     
@@ -25,7 +26,7 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
     
     
     //Action for the REGISTER button
-    @IBAction func register(_ sender: Any) {
+   @IBAction func register(_ sender: Any) {
         
         guard let emailText = email.text, let passwordText = password.text, let name = userName.text
             else {
@@ -34,7 +35,7 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
         }
         
         //Authorizes the user for account creation
-       // FIRAuth.auth()?.createUser(withEmail: emailText, password: passwordText, completion: {(user: FIRUser?, error) in
+      
         FIRAuth.auth()?.createUser(withEmail: emailText, password: passwordText,completion: {(user: FIRUser?, error) in
                         
             guard let uid = user?.uid else {
@@ -58,7 +59,7 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
                     
                     if let profileImageUrl = metadata?.downloadURL()?.absoluteString {
                      let values = ["name": name, "email": emailText, "profileImageUrl":profileImageUrl]
-                        self.registerUserIntoDatabaseWithUID(uid: uid, values: values as [String : AnyObject?])
+                        self.registerUserIntoDatabaseWithUID(uid: uid, values: values as [String : AnyObject])
                         print(metadata!)
                     }
                 })
@@ -68,7 +69,7 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
     
     
     //Function that registers users to firebase with unique IDS
-    private func registerUserIntoDatabaseWithUID (uid: String, values: [String: AnyObject?]) {
+    private func registerUserIntoDatabaseWithUID (uid: String, values: [String: AnyObject]) {
         let ref = FIRDatabase.database().reference(fromURL: "https://shayla-90e22.firebaseio.com/")
         let childRef = ref.child("Users").child((uid))
         
@@ -99,7 +100,8 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
     }
     
     //Function to assign image to the image view once selected in the picker view
-     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+
+     @nonobjc public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         
         var selectedImageFromPicker: UIImage?
         
@@ -112,7 +114,7 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
             selectPhoto.image = selectedImage
         }
         dismiss(animated: true, completion: nil)
-     //@nonobjc
+     
         
     }
     override func viewDidLoad() {
@@ -122,7 +124,7 @@ class RegistrationViewController: UIViewController, UIImagePickerControllerDeleg
     }
 
     
-    
+   
 
    
 }
